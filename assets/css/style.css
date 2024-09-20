@@ -566,7 +566,7 @@ small {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 30px solid rgba(112, 145, 230, 0.4);
+    border: 6px solid rgba(112, 145, 230, 0.4);
     position: relative;
 }
 
