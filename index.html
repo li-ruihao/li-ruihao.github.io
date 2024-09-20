@@ -376,7 +376,77 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="row" id="Recent-Projects">
+        <div class="row">
+          <div class="col s12 m6 l4 project-item">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="iCtrl" src="/assets/img/ictrl_logo.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">iCtrl: A Simple VNC + SSH Console + SFTP Client<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A Simple VNC + SSH Console + SFTP Client built using Python, Flask and JavaScript
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b>Python, Flask</li>
+                  <li>Integrated logging into iCtrl, allowing developers to address bugs quicker with structured logs and improving debug efficiency</li>
+                  <li>Integrated CLP logging libraries into the software, enhancing log storage scaling and performance by compressing logs with an average compression ratio
+                      of 93 times better than PostgreSQL</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://ictrl.ca/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/junhaoliao/iCtrl"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4 project-item">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="GIS Mapping App" src="/assets/img/ECE297_Mapper.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">GIS Mapping Project<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A geographic information system like ArcGIS and Google Maps
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b>C/C++, EZGL Graphics Library, GTK Toolkit</li>
+                  <li>Developed a mapping geographic information system akin to Google Maps in a team of 3 using C++. Utilized the OpenStreetMap Database API in conjunction with a database to retrieve data. Designed a user interface with minimum
+                      learning requirements and drew graphics utilizing the GTK Toolkit and EZGL graphics library</li>
+                  <li>Improved program performance by <b>50%</b> leveraging various STL data structures, including vector and unordered map</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="recent-projects">
+
+          </div>
 
           <!-- ************* -->
         </div>
@@ -575,96 +645,26 @@
     })
   </script>
 
-  <div id="dynamic_projects">
-          <div class="col s12 m6 l4 project-item" data-date="2024-05-01">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="iCtrl" src="/assets/img/ictrl_logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">iCtrl: A Simple VNC + SSH Console + SFTP Client<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A Simple VNC + SSH Console + SFTP Client built using Python, Flask and JavaScript
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b>Python, Flask</li>
-                  <li>Integrated logging into iCtrl, allowing developers to address bugs quicker with structured logs and improving debug efficiency</li>
-                  <li>Integrated CLP logging libraries into the software, enhancing log storage scaling and performance by compressing logs with an average compression ratio
-                      of 93 times better than PostgreSQL</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://ictrl.ca/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/junhaoliao/iCtrl"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4 project-item" data-date="2022-01-01">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="GIS Mapping App" src="/assets/img/ECE297_Mapper.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">GIS Mapping Project<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A geographic information system like ArcGIS and Google Maps
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b>C/C++, EZGL Graphics Library, GTK Toolkit</li>
-                  <li>Developed a mapping geographic information system akin to Google Maps in a team of 3 using C++. Utilized the OpenStreetMap Database API in conjunction with a database to retrieve data. Designed a user interface with minimum
-                      learning requirements and drew graphics utilizing the GTK Toolkit and EZGL graphics library</li>
-                  <li>Improved program performance by <b>50%</b> leveraging various STL data structures, including vector and unordered map</li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-  </div>
-
   <script>
-    function latestProject() {
-      const projectItems = document.getElementById('dynamic_projects');
-      let mostRecentProj = null;
-      let latestDate = new Date(0);
+    var projects = [
+      {
+        content: '<div class="col s12 m6 l4 project-item"> <div class="card medium"> <div class="card-image waves-effect waves-block waves-light"> <img alt="iCtrl" src="/assets/img/ictrl_logo.png" style="height: 100%; width: 100%" class="activator" /> </div> <div class="card-content"> <span class="card-title activator teal-text hoverline">iCtrl: A Simple VNC + SSH Console + SFTP Client<i class="mdi-navigation-more-vert right"></i></span> <p> A Simple VNC + SSH Console + SFTP Client built using Python, Flask and JavaScript </p> </div> <div class="card-reveal"> <!-- TODO: change this -- only close button --> <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> --> <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span> <ul> <li><b>Tools:</b>Python, Flask</li> <li>Integrated logging into iCtrl, allowing developers to address bugs quicker with structured logs and improving debug efficiency</li> <li>Integrated CLP logging libraries into the software, enhancing log storage scaling and performance by compressing logs with an average compression ratio of 93 times better than PostgreSQL</li> </ul> <div class="card-action"> <a aria-label="Visit " href="https://ictrl.ca/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-external-link"></i></a> <a aria-label="Visit the GitHub repo for project" href="https://github.com/junhaoliao/iCtrl" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a> </div> </div> </div> </div>',
+        date: '2024-05-01'
+      },
+      {
+        content: '<div class="col s12 m6 l4 project-item"> <div class="card medium"> <div class="card-image waves-effect waves-block waves-light"> <img alt="GIS Mapping App" src="/assets/img/ECE297_Mapper.png" style="height: 100%; width: 100%" class="activator" /> </div> <div class="card-content"> <span class="card-title activator teal-text hoverline">GIS Mapping Project<i class="mdi-navigation-more-vert right"></i></span> <p> A geographic information system like ArcGIS and Google Maps </p> </div> <div class="card-reveal"> <!-- TODO: change this -- only close button --> <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> --> <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span> <ul> <li><b>Tools:</b>C/C++, EZGL Graphics Library, GTK Toolkit</li> <li>Developed a mapping geographic information system akin to Google Maps in a team of 3 using C++. Utilized the OpenStreetMap Database API in conjunction with a database to retrieve data. Designed a user interface with minimum learning requirements and drew graphics utilizing the GTK Toolkit and EZGL graphics library</li> <li>Improved program performance by <b>50%</b> leveraging various STL data structures, including vector and unordered map</li> </ul> </div> </div> </div>',
+        date: '2022-01-01'
+      }
+    ]
 
-      projectItems.forEach(project => {
-        const dateStr = item.getAttribute('date-date');
-        const date = new Date(dateStr);
+    projects.sort((a, b) => new Date(a.date) - new Date(b.date));
+    const mostRecentIndex = projects.length - 1;
 
-        if(date > latestDate) {
-          latestDate = date;
-          mostRecentProj = item;
-        }
-      });
+    const parser = new DOMParser();
+    const projectHTML = parser.parseFromString(projects[mostRecentIndex].content, 'text/html');
 
-      return mostRecentProj;
-    }
-
-    const recentProj = document.getElementById('Recent-Projects');
-    recentProj.innerHTML = latestProject();
+    const mostRecentProj = document.getElementById('recent-projects');
+    mostRecentProj.innerHTML = projectHTML.body.innerHTML;
   </script>
 </body>
 
