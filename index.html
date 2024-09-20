@@ -447,6 +447,7 @@
           <div id="recent-projects">
 
           </div>
+          <button id="loadMoreButton">Load More</button>
 
           <!-- ************* -->
         </div>
@@ -661,10 +662,34 @@
     const mostRecentIndex = projects.length - 1;
 
     const parser = new DOMParser();
-    const projectHTML = parser.parseFromString(projects[mostRecentIndex].content, 'text/html');
+    const newestProjectHTML = parser.parseFromString(projects[mostRecentIndex].content, 'text/html');
 
     const mostRecentProj = document.getElementById('recent-projects');
-    mostRecentProj.innerHTML = projectHTML.body.innerHTML;
+    mostRecentProj.innerHTML = newestProjectHTML.body.innerHTML;
+
+    const loadMoreButton = document.getElementById("loadMoreButton");
+    loadMoreButton.addEventListener('click', handleClick);
+
+    var clickStatus = false;
+
+    function handleClick(event) {
+
+      clickStatus = !clickStatus;
+
+      if(clickStatus) {
+        mostRecentProj.innerHTML = '';
+        let totalHTML = '';
+        projects.forEach(project => {
+          totalHTML += project.content + ' ';
+        });
+        mostRecentProj.innerHTML = parser.parseFromString(totalHTML, 'text/html').body.innerHTML;
+      }
+      else {
+        mostRecentProj.innerHTML = '';
+        mostRecentProj.innerHTML = newestProjectHTML.body.innerHTML;
+      }
+    }
+
   </script>
 </body>
 
