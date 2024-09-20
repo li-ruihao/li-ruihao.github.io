@@ -562,10 +562,13 @@ small {
   background-color: #7091E6 !important;
 }
 
-#places-travelled .container.map {
+#places-travelled .container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#places-travelled .container.map {
     border: 12px solid rgba(112, 145, 230, 0.4);
 }
 
