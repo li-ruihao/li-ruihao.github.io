@@ -1,6 +1,25 @@
 # Note
 This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
 
+Activity 1:
+![img.png](img.png)
+
+Activity 2:
+![img_1.png](img_1.png)
+
+Activity 3:
+![img_2.png](img_2.png)
+
+Activity 4:
+![img_3.png](img_3.png)
+
+Activity 5:
+Before Clicking on Load More:
+![img_4.png](img_4.png)
+
+After Clicking on Load More:
+![img_5.png](img_5.png)
+
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
