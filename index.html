@@ -376,11 +376,7 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="row">
-
-          <div id="Recent-Projects">
-
-          </div>
+        <div class="row" id="Recent-Projects">
 
           <!-- ************* -->
         </div>
@@ -649,17 +645,26 @@
   </div>
 
   <script>
-    const sortByDate = () => {
-      const allProjects = document.getElementById('dynamic_projects');
-      const projectArray = Array.from(container.getElementByClassName('project-item'));
+    function latestProject() {
+      const projectItems = document.getElementById('dynamic_projects');
+      let mostRecentProj = null;
+      let latestDate = new Date(0);
 
-      projectArray.sort((a,b) => {
-         return (new Date(a.getAttribute('data-date'))) - (new Date(b.getAttribute('data-date')));
+      projectItems.forEach(project => {
+        const dateStr = item.getAttribute('date-date');
+        const date = new Date(dateStr);
+
+        if(date > latestDate) {
+          latestDate = date;
+          mostRecentProj = item;
+        }
       });
 
-      allProjects.innerHTML = '';
-      projectArray.forEach(item => allProjects.appendChild(item));
-    };
+      return mostRecentProj;
+    }
+
+    const recentProj = document.getElementById('Recent-Projects');
+    recentProj.innerHTML = latestProject();
   </script>
 </body>
 
