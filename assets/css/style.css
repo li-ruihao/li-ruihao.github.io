@@ -563,8 +563,8 @@ small {
 }
 
 #places-travelled .container.map {
+    display: flex;
     border: 6px solid rgba(112, 145, 230, 0.4);
-    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
