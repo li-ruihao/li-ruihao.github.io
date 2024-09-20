@@ -562,6 +562,16 @@ small {
   background-color: #7091E6 !important;
 }
 
+#places-travelled .container.map {
+    width = 640px;
+    height= 480px;
+    border: 6px solid rgba(112, 145, 230, 0.4);
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
 /* .teal {
   background-color: #00695c !important;
 } */
