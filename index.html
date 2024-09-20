@@ -389,11 +389,12 @@
           <div id="recent-projects">
 
           </div>
-          
-          <button id="loadMoreButton">Load More</button>
-
           <!-- ************* -->
         </div>
+      </div>
+
+      <div class="container">
+        <button id="loadMoreButton">Load More</button>
       </div>
     </section>
 
@@ -626,10 +627,12 @@
           totalHTML += project.content + ' ';
         });
         mostRecentProj.innerHTML = parser.parseFromString(totalHTML, 'text/html').body.innerHTML;
+        loadMoreButton.innerHTML = 'Collapse'
       }
       else {
         mostRecentProj.innerHTML = '';
         mostRecentProj.innerHTML = newestProjectHTML.body.innerHTML;
+        loadMoreButton.innerHTML = 'Load More'
       }
     }
 
